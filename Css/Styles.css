@@ -160,6 +160,7 @@ img {
   .container {
     justify-content: center;
     height: 100vh;
+    max-height: 100vh;
   }
 
   .card-img-part {
