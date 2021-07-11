@@ -2,7 +2,7 @@
   .container {
     height: auto;
     display: flex;
-    padding: 20% 8%;
+    padding: 25% 8%;
   }
 
   .card {
@@ -58,6 +58,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border-color: black;
 }
 
 h1 {
@@ -74,6 +75,8 @@ span {
 img {
   height: 100%;
   mix-blend-mode: multiply;
+  width: 100%;
+  object-fit: cover;
 }
 
 .container {
@@ -97,6 +100,7 @@ img {
   justify-content: space-between;
   height: 100%;
   width: 85%;
+  margin: auto;
 }
 
 .card-text-part {
@@ -112,6 +116,7 @@ img {
   font-size: 1.4rem;
   line-height: 2.4rem;
   letter-spacing: 0.5px;
+  text-align: center;
 }
 
 .stats {
@@ -142,10 +147,6 @@ img {
   margin-top: 0.8rem;
 }
 
-.img-mobile {
-  display: none;
-}
-
 .attribution {
   display: block;
   position: relative;
@@ -166,5 +167,41 @@ img {
   .card-img-part {
     border-radius: 0 1rem 1rem 0;
     position: relative;
+    width: 50%;
+  }
+
+  .card-text-part {
+    display: block;
+    width: 44%;
+  }
+
+  .card {
+    margin: 0 8%;
+  }
+
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .text {
+    text-align: left;
+  }
+
+  .block {
+    margin: 0;
+    width: 100%;
+  }
+
+  .stats {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 0 60px;
+    justify-content: flex-start;
+  }
+
+  .stat-block {
+    width: fit-content;
   }
 }
